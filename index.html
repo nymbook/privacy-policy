@@ -89,6 +89,13 @@
       margin: 15px 0;
       font-size: 14px;
     }
+    .permission-policy {
+      background: #f3e8ff;
+      border-left: 4px solid #9c27b0;
+      padding: 12px 16px;
+      margin: 15px 0;
+      font-size: 14px;
+    }
     @media (max-width: 600px) {
       body {
         padding: 20px 15px;
@@ -104,7 +111,7 @@
 </head>
 <body>
   <h1>Privacy Policy</h1>
-  <p class="effective-date">Effective date: April 28, 2026</p>
+  <p class="effective-date">Effective date: April 29, 2026</p>
 
   <!-- ==================== ENGLISH VERSION ==================== -->
   <div class="language-section">
@@ -156,8 +163,33 @@
       <li><strong>Shared Preferences</strong>: Stores local device settings (dark/light mode)</li>
     </ul>
 
+    <h3>ACCESS PERMISSIONS POLICY</h3>
+    <p>To provide accurate network analysis and device scanning features, the <strong>[Network Toolbox]</strong> app requires the following special access permissions:</p>
+    
+    <h4>1. Location Access (ACCESS_FINE_LOCATION & ACCESS_COARSE_LOCATION)</h4>
+    <ul>
+      <li><strong>Purpose:</strong> According to Android operating system technical regulations, scanning for nearby Wi-Fi networks or retrieving the current Wi-Fi name (SSID) requires location access. The app uses this permission to:
+        <ul>
+          <li>Identify and display detailed information about your connected Wi-Fi network.</li>
+          <li>Support the local network device scanning feature with maximum accuracy.</li>
+        </ul>
+      </li>
+      <li><strong>Our Commitment:</strong> We DO NOT collect, store, or share your actual geographic location data with any third parties. This permission is used solely for technical functions related to Wi-Fi networking.</li>
+    </ul>
+    
+    <h4>2. Change Wi-Fi Multicast State (CHANGE_WIFI_MULTICAST_STATE)</h4>
+    <ul>
+      <li><strong>Purpose:</strong> This permission allows the app to receive Multicast packets transmitted within your Wi-Fi network. This is a mandatory requirement for the app to:
+        <ul>
+          <li>Automatically discover smart devices (such as IP Cameras, printers, and NAS network drives) using mDNS, UPnP, or Bonjour protocols.</li>
+          <li>Perform the Network Discovery feature to provide a comprehensive list of all active components in your network.</li>
+        </ul>
+      </li>
+      <li><strong>Our Commitment:</strong> The reception of Multicast data only occurs temporarily while you are performing a network scan and does not affect the performance or security of your Wi-Fi connection.</li>
+    </ul>
+
     <h3>Device Permissions</h3>
-    <p>Our Apps do not request access to sensitive device permissions, including but not limited to your camera, location, microphone, or contacts.</p>
+    <p>Our Apps do not request access to sensitive device permissions, including but not limited to your camera, location, microphone, or contacts. (Note: Specific network tools may require the location and multicast permissions detailed above for Wi-Fi functionality only – see Access Permissions Policy section).</p>
 
     <h3>App Access Permissions</h3>
     <p>The application uses app access permissions for the following purposes:</p>
@@ -303,8 +335,33 @@
       <li><strong>Shared Preferences</strong>: Lưu cài đặt cục bộ trên thiết bị (chế độ tối/sáng)</li>
     </ul>
 
+    <h3>CHÍNH SÁCH SỬ DỤNG QUYỀN TRUY CẬP</h3>
+    <p>Để cung cấp các tính năng phân tích mạng và quét thiết bị một cách chính xác, ứng dụng <strong>[Network Toolbox]</strong> yêu cầu một số quyền truy cập đặc biệt như sau:</p>
+    
+    <h4>1. Quyền Truy cập Vị trí (ACCESS_FINE_LOCATION & ACCESS_COARSE_LOCATION)</h4>
+    <ul>
+      <li><strong>Mục đích:</strong> Theo quy định kỹ thuật của hệ điều hành Android, việc quét danh sách các mạng Wi-Fi xung quanh hoặc lấy tên Wi-Fi (SSID) hiện tại yêu cầu quyền truy cập vị trí. Ứng dụng sử dụng quyền này để:
+        <ul>
+          <li>Xác định và hiển thị thông tin chi tiết về mạng Wi-Fi bạn đang kết nối.</li>
+          <li>Hỗ trợ tính năng quét các thiết bị trong mạng nội bộ một cách chính xác nhất.</li>
+        </ul>
+      </li>
+      <li><strong>Cam kết:</strong> Chúng tôi KHÔNG thu thập, lưu trữ hoặc chia sẻ dữ liệu vị trí địa lý thực tế của người dùng cho bất kỳ bên thứ ba nào. Quyền này chỉ được sử dụng duy nhất cho các chức năng kỹ thuật liên quan đến mạng Wi-Fi.</li>
+    </ul>
+    
+    <h4>2. Quyền Thay đổi Trạng thái Wi-Fi Multicast (CHANGE_WIFI_MULTICAST_STATE)</h4>
+    <ul>
+      <li><strong>Mục đích:</strong> Quyền này cho phép ứng dụng nhận các gói tin Multicast được truyền đi trong mạng Wi-Fi của bạn. Đây là yêu cầu bắt buộc để ứng dụng có thể:
+        <ul>
+          <li>Tự động phát hiện các thiết bị thông minh (như Camera IP, máy in, ổ cứng mạng NAS) sử dụng giao thức mDNS, UPnP hoặc Bonjour.</li>
+          <li>Thực hiện tính năng quét thiết bị (Network Discovery) để liệt kê đầy đủ các thành phần đang hoạt động trong mạng của bạn.</li>
+        </ul>
+      </li>
+      <li><strong>Cam kết:</strong> Việc thu nhận dữ liệu Multicast chỉ diễn ra tạm thời trong quá trình bạn thực hiện thao tác quét mạng và không gây ảnh hưởng đến hiệu suất hoặc bảo mật của đường truyền Wi-Fi.</li>
+    </ul>
+
     <h3>Quyền Truy Cập Thiết Bị</h3>
-    <p>Ứng dụng của chúng tôi không yêu cầu quyền truy cập vào các tính năng nhạy cảm trên thiết bị, bao gồm nhưng không giới hạn ở máy ảnh, vị trí, micro hoặc danh bạ.</p>
+    <p>Ứng dụng của chúng tôi không yêu cầu quyền truy cập vào các tính năng nhạy cảm trên thiết bị, bao gồm nhưng không giới hạn ở máy ảnh, vị trí, micro hoặc danh bạ. (Lưu ý: Các công cụ mạng cụ thể có thể yêu cầu quyền vị trí và multicast như đã nêu chi tiết trong phần Chính sách sử dụng quyền truy cập ở trên, chỉ phục vụ cho chức năng Wi-Fi).</p>
 
     <h3>Quyền Truy cập Ứng dụng</h3>
     <p>Ứng dụng sử dụng quyền truy cập danh sách ứng dụng với mục đích:</p>
