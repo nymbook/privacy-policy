@@ -96,6 +96,13 @@
       margin: 15px 0;
       font-size: 14px;
     }
+    .iap-policy {
+      background: #e3f2fd;
+      border-left: 4px solid #1565c0;
+      padding: 12px 16px;
+      margin: 15px 0;
+      font-size: 14px;
+    }
     @media (max-width: 600px) {
       body {
         padding: 20px 15px;
@@ -124,6 +131,32 @@
     <div class="general-note">
       <strong>Note:</strong> This Privacy Policy applies to all applications developed by NymDev. For specific information about a particular application, please refer to the application description in the respective app store or contact us directly.
     </div>
+
+    <!-- ==================== DATA WE COLLECT (Quizdom IAP) ==================== -->
+    <h2>DATA WE COLLECT</h2>
+    
+    <h3>Information You Provide</h3>
+    <p>Our Apps are designed to <strong>not collect, store, or process any personal information</strong> that identifies you, such as your name, address, email address, or phone number. You can use all features of our Apps without providing any personal data.</p>
+
+    <h3>In-App Purchase Data (Quizdom Game)</h3>
+    <div class="iap-policy">
+      <p>When you make an in-app purchase within the <strong>Quizdom</strong> game (package: com.nymdev.typhutrithuc), we do not collect or store your payment account or credit card information. However, we collect the following anonymized transaction-related information provided by Google Play:</p>
+      <ul>
+        <li><strong>Transaction ID</strong></li>
+        <li><strong>Purchase Token</strong></li>
+        <li><strong>Transaction Time</strong></li>
+        <li><strong>Payment Status</strong></li>
+      </ul>
+      <p>This data is collected solely for the purpose of unlocking premium features within the game.</p>
+    </div>
+
+    <h3>Technical Information Automatically Processed</h3>
+    <p>Our Apps may access:</p>
+    <ul>
+      <li><strong>Network Connection</strong>: To display ads and update content</li>
+      <li><strong>Google Advertising ID</strong>: Used by Google AdMob for personalized advertising</li>
+      <li><strong>Shared Preferences</strong>: Stores local device settings (dark/light mode)</li>
+    </ul>
 
     <!-- ==================== THO CAMERA APP SPECIFIC POLICY (ENGLISH) ==================== -->
     <h2>PERSONAL DATA PROTECTION POLICY (THO CAMERA APP)</h2>
@@ -155,9 +188,63 @@
       <li>Your personal information will only be disclosed when officially requested by competent state authorities in accordance with the laws of Vietnam.</li>
     </ul>
 
-    <h3>Information We Do Not Collect</h3>
-    <p>We are committed to protecting your privacy. Our Apps are designed to <strong>not collect, store, or process any personal information</strong> that identifies you, such as your name, address, email address, or phone number. You can use all features of our Apps without providing any personal data.</p>
+    <!-- ==================== HOW WE USE YOUR DATA (Quizdom IAP) ==================== -->
+    <h2>HOW WE USE YOUR DATA</h2>
 
+    <h3>In-App Purchase Data Usage (Quizdom Game)</h3>
+    <div class="iap-policy">
+      <p>Purchase data is used exclusively for the following purposes:</p>
+      <ul>
+        <li>Verifying device access rights to the <strong>'Remove Ads and Unlock All Questions'</strong> package</li>
+        <li>Maintaining these premium benefits when you delete and reinstall the application</li>
+        <li>Providing technical support or processing refund requests if required</li>
+      </ul>
+    </div>
+
+    <h3>General Data Usage</h3>
+    <p>For other data collected:</p>
+    <ul>
+      <li><strong>Google Advertising ID</strong>: Used by Google AdMob for personalized advertising</li>
+      <li><strong>Firebase Analytics Data</strong>: Used to improve app functionality and user experience</li>
+      <li><strong>Local Preferences</strong>: Stored locally to remember your settings</li>
+    </ul>
+
+    <!-- ==================== THIRD-PARTY DATA SHARING (Quizdom IAP) ==================== -->
+    <h2>THIRD-PARTY DATA SHARING</h2>
+
+    <h3>Google Play Billing (Quizdom Game)</h3>
+    <div class="iap-policy">
+      <p>We use <strong>Google Play Billing</strong> service to process financial transactions securely. The processing of your payment data will comply strictly with <a href="https://policies.google.com/privacy" target="_blank">Google Play's Privacy Policy</a>.</p>
+    </div>
+
+    <h3>Other Third-Party Services</h3>
+
+    <h4>ExchangeRate-API Integration (Unit Converter App Only)</h4>
+    <p>The Unit Converter App uses ExchangeRate-API service to update currency exchange rates between different currency units. This integration is solely for the purpose of providing accurate and automatic currency conversion functionality to users.</p>
+    
+    <ul>
+      <li>The app only sends requests to ExchangeRate-API to receive publicly available exchange rate data</li>
+      <li>The app does <strong>NOT</strong> send, store, or share any personal information or user identification data to ExchangeRate-API or any third parties</li>
+      <li>Data received from ExchangeRate-API is only used temporarily during calculations and is not stored long-term on the device or servers</li>
+      <li>The app does not require users to log in or provide any personal information to use the currency conversion feature</li>
+    </ul>
+    
+    <h4>Google AdMob</h4>
+    <p>Some of our Apps may integrate Google AdMob to display advertisements. As a third-party service, AdMob may collect non-personally identifiable information (e.g., device type, operating system, interaction data) to serve relevant ads and for analytics purposes. This data collection is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
+    
+    <h4>Firebase Analytics</h4>
+    <p>Our Apps use <strong>Firebase Analytics</strong> to collect anonymous usage data including:</p>
+    <ul>
+      <li>Feature interactions (screen views, button clicks)</li>
+      <li>Device information (model, operating system)</li>
+      <li>Session data (usage time, frequency)</li>
+    </ul>
+    <p><strong>All data is anonymized</strong> and cannot identify individual users. This data helps us improve app functionality and user experience.</p>
+    
+    <p>To support these advertising services, our Apps may access the <strong>Google Advertising ID</strong> provided by Google Play services. This identifier is used solely for advertising and analytics. We do not link the Advertising ID to any personally identifiable information. You can manage your ad preferences, including resetting your Advertising ID or opting out of personalized ads, through your Google Account settings.</p>
+
+    <!-- ==================== OTHER SECTIONS ==================== -->
+    
     <h3>AI Assistant Feature - Gemini AI</h3>
     <p>Some of our applications may include an AI Assistant feature powered by Google Gemini AI:</p>
     
@@ -188,14 +275,6 @@
     <!-- BỔ SUNG: PACKAGE_USAGE_STATS (FocusRealm) - TIẾNG ANH -->
     <h3>Screen Time Monitoring (FocusRealm App)</h3>
     <p>FocusRealm utilizes the <strong>PACKAGE_USAGE_STATS (Usage Access)</strong> permission to monitor the screen time of entertainment apps for which users have set limits. All of this usage statistics data is processed entirely locally (offline) on your device via a secure SQLite database, and is never transmitted, stored, or shared with any third-party servers.</p>
-
-    <h3>Technical Information Automatically Processed</h3>
-    <p>Our Apps may access:</p>
-    <ul>
-      <li><strong>Network Connection</strong>: To display ads and update content</li>
-      <li><strong>Google Advertising ID</strong>: Used by Google AdMob for personalized advertising</li>
-      <li><strong>Shared Preferences</strong>: Stores local device settings (dark/light mode)</li>
-    </ul>
 
     <h3>ACCESS PERMISSIONS POLICY</h3>
     <p>To provide accurate network analysis and device scanning features, the <strong>[Network Toolbox]</strong> app requires the following special access permissions:</p>
@@ -263,32 +342,6 @@
       <li><strong>Active Sharing Mechanism:</strong> The Application may facilitate the sharing of images or content only when explicitly initiated by the user. This means data is only shared with third-party platforms or other users when you proactively trigger the sharing function (e.g., clicking a "Share" button or authorizing an export). We do not share your content automatically without your direct action.</li>
     </ul>
 
-    <h3>Third-Party Services</h3>
-    
-    <h4>ExchangeRate-API Integration (Unit Converter App Only)</h4>
-    <p>The Unit Converter App uses ExchangeRate-API service to update currency exchange rates between different currency units. This integration is solely for the purpose of providing accurate and automatic currency conversion functionality to users.</p>
-    
-    <ul>
-      <li>The app only sends requests to ExchangeRate-API to receive publicly available exchange rate data</li>
-      <li>The app does <strong>NOT</strong> send, store, or share any personal information or user identification data to ExchangeRate-API or any third parties</li>
-      <li>Data received from ExchangeRate-API is only used temporarily during calculations and is not stored long-term on the device or servers</li>
-      <li>The app does not require users to log in or provide any personal information to use the currency conversion feature</li>
-    </ul>
-    
-    <h4>Google AdMob</h4>
-    <p>Some of our Apps may integrate Google AdMob to display advertisements. As a third-party service, AdMob may collect non-personally identifiable information (e.g., device type, operating system, interaction data) to serve relevant ads and for analytics purposes. This data collection is governed by <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a>.</p>
-    
-    <h4>Firebase Analytics</h4>
-    <p>Our Apps use <strong>Firebase Analytics</strong> to collect anonymous usage data including:</p>
-    <ul>
-      <li>Feature interactions (screen views, button clicks)</li>
-      <li>Device information (model, operating system)</li>
-      <li>Session data (usage time, frequency)</li>
-    </ul>
-    <p><strong>All data is anonymized</strong> and cannot identify individual users. This data helps us improve app functionality and user experience.</p>
-    
-    <p>To support these advertising services, our Apps may access the <strong>Google Advertising ID</strong> provided by Google Play services. This identifier is used solely for advertising and analytics. We do not link the Advertising ID to any personally identifiable information. You can manage your ad preferences, including resetting your Advertising ID or opting out of personalized ads, through your Google Account settings.</p>
-
     <h3>Health and Wellness Apps Specific Policy</h3>
     <p>For health and wellness applications in our portfolio:</p>
     <ul>
@@ -331,6 +384,32 @@
       <strong>Lưu ý:</strong> Chính sách Quyền riêng tư này áp dụng cho tất cả các ứng dụng được phát triển bởi NymDev. Để biết thông tin cụ thể về một ứng dụng cụ thể, vui lòng tham khảo mô tả ứng dụng trong cửa hàng ứng dụng tương ứng hoặc liên hệ trực tiếp với chúng tôi.
     </div>
 
+    <!-- ==================== DỮ LIỆU CHÚNG TÔI THU THẬP (Quizdom IAP) ==================== -->
+    <h2>DỮ LIỆU CHÚNG TÔI THU THẬP</h2>
+    
+    <h3>Thông Tin Bạn Cung Cấp</h3>
+    <p>Chúng tôi cam kết bảo vệ quyền riêng tư của bạn. Các Ứng dụng của chúng tôi được thiết kế để <strong>không thu thập, lưu trữ hoặc xử lý bất kỳ thông tin cá nhân</strong> nào có thể định danh bạn, như tên, địa chỉ, email hoặc số điện thoại. Bạn có thể sử dụng tất cả các tính năng của Ứng dụng mà không cần cung cấp dữ liệu cá nhân.</p>
+
+    <h3>Dữ Liệu Mua Hàng Trong Ứng Dụng (Game Quizdom)</h3>
+    <div class="iap-policy">
+      <p>Khi bạn thực hiện mua hàng trong ứng dụng <strong>Quizdom</strong> (gói: com.nymdev.typhutrithuc), chúng tôi không thu thập hoặc lưu trữ thông tin tài khoản thanh toán hay thẻ tín dụng của bạn. Tuy nhiên, chúng tôi thu thập các thông tin ẩn danh liên quan đến giao dịch do Google Play cung cấp, bao gồm:</p>
+      <ul>
+        <li><strong>ID giao dịch (Transaction ID)</strong></li>
+        <li><strong>Mã xác thực đơn hàng (Purchase Token)</strong></li>
+        <li><strong>Thời gian giao dịch</strong></li>
+        <li><strong>Trạng thái thanh toán</strong></li>
+      </ul>
+      <p>Nhằm mục đích mở khóa tính năng cao cấp trong game.</p>
+    </div>
+
+    <h3>Thông Tin Kỹ Thuật Được Xử Lý Tự Động</h3>
+    <p>Ứng dụng của chúng tôi có thể truy cập:</p>
+    <ul>
+      <li><strong>Kết nối mạng</strong>: Để hiển thị quảng cáo và cập nhật nội dung</li>
+      <li><strong>Mã Quảng cáo Google (Google Advertising ID)</strong>: Được sử dụng bởi Google AdMob cho quảng cáo cá nhân hóa</li>
+      <li><strong>Shared Preferences</strong>: Lưu cài đặt cục bộ trên thiết bị (chế độ tối/sáng)</li>
+    </ul>
+
     <!-- ==================== THO CAMERA APP SPECIFIC POLICY (TIẾNG VIỆT) ==================== -->
     <h2>CHÍNH SÁCH BẢO VỆ DỮ LIỆU CÁ NHÂN (ỨNG DỤNG THỢ CAMERA)</h2>
     <p>Chính sách này mô tả cách ứng dụng Thợ Camera thu thập, sử dụng, lưu trữ và bảo vệ thông tin cá nhân của bạn khi sử dụng ứng dụng trên thiết bị Android. Chúng tôi cam kết bảo mật tuyệt đối quyền riêng tư của người dùng.</p>
@@ -361,8 +440,62 @@
       <li>Thông tin cá nhân chỉ được tiết lộ trong trường hợp cơ quan nhà nước có thẩm quyền yêu cầu chính thức tuân theo quy định của pháp luật Việt Nam.</li>
     </ul>
 
-    <h3>Thông Tin Chúng Tôi Không Thu Thập</h3>
-    <p>Chúng tôi cam kết bảo vệ quyền riêng tư của bạn. Các Ứng dụng của chúng tôi được thiết kế để <strong>không thu thập, lưu trữ hoặc xử lý bất kỳ thông tin cá nhân</strong> nào có thể định danh bạn, như tên, địa chỉ, email hoặc số điện thoại. Bạn có thể sử dụng tất cả các tính năng của Ứng dụng mà không cần cung cấp dữ liệu cá nhân.</p>
+    <!-- ==================== CÁCH CHÚNG TÔI SỬ DỤNG DỮ LIỆU (Quizdom IAP) ==================== -->
+    <h2>CÁCH CHÚNG TÔI SỬ DỤNG DỮ LIỆU</h2>
+
+    <h3>Sử Dụng Dữ Liệu Mua Hàng (Game Quizdom)</h3>
+    <div class="iap-policy">
+      <p>Dữ liệu mua hàng được sử dụng duy nhất để:</p>
+      <ul>
+        <li>Xác thực quyền truy cập của thiết bị đối với gói <strong>'Xóa quảng cáo và Mở khóa toàn bộ câu hỏi'</strong></li>
+        <li>Duy trì quyền lợi này khi bạn xóa ứng dụng tải lại</li>
+        <li>Hỗ trợ kỹ thuật hoặc xử lý hoàn tiền nếu có yêu cầu</li>
+      </ul>
+    </div>
+
+    <h3>Sử Dụng Dữ Liệu Chung</h3>
+    <p>Đối với các dữ liệu khác được thu thập:</p>
+    <ul>
+      <li><strong>Mã Quảng cáo Google</strong>: Được Google AdMob sử dụng cho quảng cáo cá nhân hóa</li>
+      <li><strong>Dữ liệu Firebase Analytics</strong>: Được sử dụng để cải thiện chức năng ứng dụng và trải nghiệm người dùng</li>
+      <li><strong>Tùy chọn cục bộ</strong>: Được lưu trữ cục bộ để ghi nhớ cài đặt của bạn</li>
+    </ul>
+
+    <!-- ==================== CHIA SẺ DỮ LIỆU VỚI BÊN THỨ BA (Quizdom IAP) ==================== -->
+    <h2>CHIA SẺ DỮ LIỆU VỚI BÊN THỨ BA</h2>
+
+    <h3>Google Play Billing (Game Quizdom)</h3>
+    <div class="iap-policy">
+      <p>Chúng tôi sử dụng dịch vụ <strong>Google Play Billing</strong> để xử lý các giao dịch tài chính một cách an toàn. Việc xử lý dữ liệu thanh toán của bạn sẽ tuân thủ nghiêm ngặt theo <a href="https://policies.google.com/privacy" target="_blank">Chính sách quyền riêng tư của Google Play</a>.</p>
+    </div>
+
+    <h3>Các Dịch Vụ Bên Thứ Ba Khác</h3>
+
+    <h4>Tích hợp ExchangeRate-API (Chỉ dành cho ứng dụng "Chuyển Đổi Đơn Vị")</h4>
+    <p>Ứng dụng Chuyển Đổi Đơn Vị có sử dụng dịch vụ ExchangeRate-API để cập nhật tỷ giá tiền tệ giữa các đơn vị tiền tệ khác nhau. Việc tích hợp này chỉ nhằm mục đích cung cấp tính năng chuyển đổi tiền tệ chính xác và tự động cho người dùng.</p>
+    
+    <ul>
+      <li>Ứng dụng chỉ gửi yêu cầu đến ExchangeRate-API để nhận dữ liệu tỷ giá công khai</li>
+      <li>Ứng dụng <strong>KHÔNG</strong> gửi, không lưu trữ, không chia sẻ bất kỳ thông tin cá nhân hoặc dữ liệu nhận dạng người dùng nào đến ExchangeRate-API hoặc bất kỳ bên thứ ba nào</li>
+      <li>Dữ liệu nhận được từ ExchangeRate-API chỉ được sử dụng tạm thời trong quá trình tính toán, và không được lưu trữ lâu dài trên thiết bị hoặc máy chủ</li>
+      <li>Ứng dụng không yêu cầu người dùng đăng nhập hoặc cung cấp bất kỳ thông tin cá nhân nào để sử dụng chức năng chuyển đổi tiền tệ</li>
+    </ul>
+    
+    <h4>Google AdMob</h4>
+    <p>Một số Ứng dụng của chúng tôi có thể tích hợp Google AdMob để hiển thị quảng cáo. Là một dịch vụ bên thứ ba, AdMob có thể thu thập thông tin không định danh (ví dụ: loại thiết bị, hệ điều hành, dữ liệu tương tác) để phục vụ quảng cáo phù hợp và cho mục đích phân tích. Việc thu thập dữ liệu này được điều chỉnh bởi <a href="https://policies.google.com/privacy" target="_blank">Chính sách Quyền riêng tư của Google</a>.</p>
+    
+    <h4>Firebase Analytics</h4>
+    <p>Ứng dụng của chúng tôi sử dụng <strong>Firebase Analytics</strong> để thu thập dữ liệu sử dụng ẩn danh bao gồm:</p>
+    <ul>
+      <li>Tương tác tính năng (màn hình xem, nút bấm)</li>
+      <li>Thông tin thiết bị (model, hệ điều hành)</li>
+      <li>Dữ liệu phiên (thời gian sử dụng, tần suất)</li>
+    </ul>
+    <p><strong>TẤT CẢ dữ liệu đều được ẩn danh</strong> và không thể định danh người dùng cụ thể. Dữ liệu này giúp chúng tôi cải thiện chức năng ứng dụng và trải nghiệm người dùng.</p>
+    
+    <p>Để hỗ trợ các dịch vụ quảng cáo này, Ứng dụng của chúng tôi có thể truy cập <strong>Mã Quảng cáo Google (Google Advertising ID)</strong> được cung cấp bởi dịch vụ Google Play. Mã định danh này chỉ được sử dụng cho mục đích quảng cáo và phân tích. Chúng tôi không liên kết Mã Quảng cáo với bất kỳ thông tin cá nhân nào. Bạn có thể quản lý tùy chọn quảng cáo, bao gồm đặt lại Mã Quảng cáo hoặc từ chối quảng cáo được cá nhân hóa, thông qua cài đặt Tài khoản Google của mình.</p>
+
+    <!-- ==================== OTHER SECTIONS (TIẾNG VIỆT) ==================== -->
 
     <h3>Tính Năng Trợ Lý AI - Gemini AI</h3>
     <p>Một số ứng dụng của chúng tôi có thể bao gồm tính năng Trợ lý AI được cung cấp bởi Google Gemini AI:</p>
@@ -394,14 +527,6 @@
     <!-- BỔ SUNG: PACKAGE_USAGE_STATS (FocusRealm) - TIẾNG VIỆT -->
     <h3>Theo dõi thời gian sử dụng (Ứng dụng FocusRealm)</h3>
     <p>FocusRealm sử dụng quyền <strong>PACKAGE_USAGE_STATS (Truy cập dữ liệu sử dụng)</strong> để theo dõi thời gian sử dụng các ứng dụng giải trí do chính người dùng thiết lập giới hạn. Tất cả dữ liệu thống kê sử dụng này được xử lý hoàn toàn cục bộ (offline) trên thiết bị của bạn thông qua cơ sở dữ liệu SQLite an toàn và không bao giờ được truyền tải, lưu trữ hoặc chia sẻ với bất kỳ máy chủ bên thứ ba nào.</p>
-
-    <h3>Thông Tin Kỹ Thuật Được Xử Lý Tự Động</h3>
-    <p>Ứng dụng của chúng tôi có thể truy cập:</p>
-    <ul>
-      <li><strong>Kết nối mạng</strong>: Để hiển thị quảng cáo và cập nhật nội dung</li>
-      <li><strong>Mã Quảng cáo Google (Google Advertising ID)</strong>: Được sử dụng bởi Google AdMob cho quảng cáo cá nhân hóa</li>
-      <li><strong>Shared Preferences</strong>: Lưu cài đặt cục bộ trên thiết bị (chế độ tối/sáng)</li>
-    </ul>
 
     <h3>CHÍNH SÁCH SỬ DỤNG QUYỀN TRUY CẬP</h3>
     <p>Để cung cấp các tính năng phân tích mạng và quét thiết bị một cách chính xác, ứng dụng <strong>[Network Toolbox]</strong> yêu cầu một số quyền truy cập đặc biệt như sau:</p>
@@ -468,32 +593,6 @@
       <li><strong>Trách nhiệm nội dung:</strong> Người dùng hoàn toàn chịu trách nhiệm về mọi nội dung (bao gồm nhưng không giới hạn ở hình ảnh, văn bản, thông tin) mà mình khởi tạo, đăng tải hoặc chia sẻ thông qua các tính năng của ứng dụng. Chúng tôi không chịu trách nhiệm đối với bất kỳ khiếu nại hoặc tổn thất nào liên quan đến các nội dung này.</li>
       <li><strong>Chia sẻ dữ liệu chủ động:</strong> Ứng dụng chỉ thực hiện việc chia sẻ hình ảnh hoặc dữ liệu khi có sự cho phép và thao tác trực tiếp từ phía người dùng (ví dụ: nhấn nút chia sẻ, lưu hình ảnh về máy hoặc gửi qua ứng dụng bên thứ ba). Chúng tôi không tự ý chia sẻ dữ liệu cá nhân của bạn nếu không có sự tương tác chủ động này.</li>
     </ul>
-
-    <h3>Dịch Vụ Của Bên Thứ Ba</h3>
-    
-    <h4>Tích hợp ExchangeRate-API (Chỉ dành cho ứng dụng "Chuyển Đổi Đơn Vị")</h4>
-    <p>Ứng dụng Chuyển Đổi Đơn Vị có sử dụng dịch vụ ExchangeRate-API để cập nhật tỷ giá tiền tệ giữa các đơn vị tiền tệ khác nhau. Việc tích hợp này chỉ nhằm mục đích cung cấp tính năng chuyển đổi tiền tệ chính xác và tự động cho người dùng.</p>
-    
-    <ul>
-      <li>Ứng dụng chỉ gửi yêu cầu đến ExchangeRate-API để nhận dữ liệu tỷ giá công khai</li>
-      <li>Ứng dụng <strong>KHÔNG</strong> gửi, không lưu trữ, không chia sẻ bất kỳ thông tin cá nhân hoặc dữ liệu nhận dạng người dùng nào đến ExchangeRate-API hoặc bất kỳ bên thứ ba nào</li>
-      <li>Dữ liệu nhận được từ ExchangeRate-API chỉ được sử dụng tạm thời trong quá trình tính toán, và không được lưu trữ lâu dài trên thiết bị hoặc máy chủ</li>
-      <li>Ứng dụng không yêu cầu người dùng đăng nhập hoặc cung cấp bất kỳ thông tin cá nhân nào để sử dụng chức năng chuyển đổi tiền tệ</li>
-    </ul>
-    
-    <h4>Google AdMob</h4>
-    <p>Một số Ứng dụng của chúng tôi có thể tích hợp Google AdMob để hiển thị quảng cáo. Là một dịch vụ bên thứ ba, AdMob có thể thu thập thông tin không định danh (ví dụ: loại thiết bị, hệ điều hành, dữ liệu tương tác) để phục vụ quảng cáo phù hợp và cho mục đích phân tích. Việc thu thập dữ liệu này được điều chỉnh bởi <a href="https://policies.google.com/privacy" target="_blank">Chính sách Quyền riêng tư của Google</a>.</p>
-    
-    <h4>Firebase Analytics</h4>
-    <p>Ứng dụng của chúng tôi sử dụng <strong>Firebase Analytics</strong> để thu thập dữ liệu sử dụng ẩn danh bao gồm:</p>
-    <ul>
-      <li>Tương tác tính năng (màn hình xem, nút bấm)</li>
-      <li>Thông tin thiết bị (model, hệ điều hành)</li>
-      <li>Dữ liệu phiên (thời gian sử dụng, tần suất)</li>
-    </ul>
-    <p><strong>TẤT CẢ dữ liệu đều được ẩn danh</strong> và không thể định danh người dùng cụ thể. Dữ liệu này giúp chúng tôi cải thiện chức năng ứng dụng và trải nghiệm người dùng.</p>
-    
-    <p>Để hỗ trợ các dịch vụ quảng cáo này, Ứng dụng của chúng tôi có thể truy cập <strong>Mã Quảng cáo Google (Google Advertising ID)</strong> được cung cấp bởi dịch vụ Google Play. Mã định danh này chỉ được sử dụng cho mục đích quảng cáo và phân tích. Chúng tôi không liên kết Mã Quảng cáo với bất kỳ thông tin cá nhân nào. Bạn có thể quản lý tùy chọn quảng cáo, bao gồm đặt lại Mã Quảng cáo hoặc từ chối quảng cáo được cá nhân hóa, thông qua cài đặt Tài khoản Google của mình.</p>
 
     <h3>Chính Sách Riêng Cho Ứng Dụng Sức Khỏe</h3>
     <p>Đối với các ứng dụng về sức khỏe và đời sống trong danh mục của chúng tôi:</p>
