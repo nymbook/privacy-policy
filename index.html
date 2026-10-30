@@ -203,7 +203,7 @@
       </ul>
     </div>
 
-    <!-- DEVICE PERMISSIONS AND SYSTEM INTEGRATIONS -->
+       <!-- DEVICE PERMISSIONS AND SYSTEM INTEGRATIONS -->
     <h2>4. DEVICE PERMISSIONS AND SYSTEM INTEGRATIONS</h2>
 
     <h3>A. Notifications and Alarms</h3>
@@ -213,13 +213,27 @@
       <li><strong>Security & Storage:</strong> All notifications are <strong>Local Notifications</strong>. All data entered for reminders is stored securely on the device's local storage and is never transmitted externally.</li>
     </ul>
 
-    <h3>B. Interaction with Other Apps</h3>
+    <!-- BỔ SUNG: MICROPHONE PERMISSION -->
+    <h3>B. Audio Recording & Microphone (RECORD_AUDIO)</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Microphone access is strictly requested only when you actively tap the microphone button to use the <em>Voice-to-Note</em> feature for real-time speech-to-text dictation.</li>
+      <li><strong>Privacy Guarantee:</strong> Speech recognition is processed directly on your device using standard Android system speech services. We <strong>do NOT record audio in the background, store NO audio files</strong>, and <strong>transmit NO voice recordings to external servers</strong> (Ephemeral / On-device processing).</li>
+    </ul>
+
+    <!-- BỔ SUNG: BIOMETRIC AUTHENTICATION -->
+    <h3>C. Biometric Authentication & Fingerprint (USE_BIOMETRIC)</h3>
+    <ul>
+      <li><strong>Purpose:</strong> Used exclusively to unlock your Password Vault and secure sensitive notes conveniently using fingerprint or facial recognition as an alternative to your PIN code.</li>
+      <li><strong>Hardware-Level Security:</strong> All biometric matching is managed and authenticated 100% within your device's isolated hardware environment (TEE / Secure Element) via Android's official <code>BiometricPrompt</code> API. The application <strong>never accesses, collects, or stores raw biometric templates</strong>.</li>
+    </ul>
+
+    <h3>D. Interaction with Other Apps</h3>
     <ul>
       <li>The application may verify the existence of essential system applications to open links to the Google Play Store (to promote developer apps) or trigger email clients for feedback.</li>
       <li>We <strong>DO NOT</strong> collect, store, or monitor information about other applications installed on your device.</li>
     </ul>
 
-    <h3>C. Health, Wellness, and Child Development Disclaimer</h3>
+    <h3>E. Health, Wellness, and Child Development Disclaimer</h3>
     <p>For our lifestyle, wellness, parenting, and health-reference applications, we do not collect, diagnose, or process personal medical records, clinical symptoms, or sensitive biological data.</p>
     <div class="health-disclaimer">
       <strong>Medical & Parental Disclaimer:</strong> All content—including but not limited to general wellness tips, feeding guides, nutritional suggestions, growth milestones, and developmental references—is provided for <strong>informational and educational purposes only</strong>. This content does not constitute medical advice, clinical diagnosis, nutritional prescription, or formal healthcare recommendations. These applications are <strong>NOT a substitute for professional pediatric care, medical consultations, or clinical evaluation by certified healthcare providers</strong>. Users should always consult a qualified physician, pediatrician, or healthcare specialist regarding any medical conditions, dietary changes, or child health concerns. The developer disclaims all liability for any actions, decisions, or consequences resulting from the use of information provided within these applications.
@@ -368,7 +382,7 @@
       </ul>
     </div>
 
-    <!-- QUYỀN THIẾT BỊ VÀ TƯƠNG TÁC -->
+       <!-- QUYỀN THIẾT BỊ VÀ TƯƠNG TÁC -->
     <h2>4. QUYỀN THIẾT BỊ VÀ TƯƠNG TÁC HỆ THỐNG</h2>
 
     <h3>A. Thông báo và Quyền liên quan</h3>
@@ -378,18 +392,31 @@
       <li><strong>Bảo mật:</strong> Tất cả là <strong>Thông báo cục bộ (Local Notifications)</strong>. Dữ liệu thiết lập nhắc nhở chỉ lưu trên máy người dùng và không gửi ra bên ngoài.</li>
     </ul>
 
-    <h3>B. Tương tác với Ứng dụng Khác</h3>
+    <!-- BỔ SUNG: QUYỀN MICRO -->
+    <h3>B. Quyền Thu Âm & Micro (Microphone / RECORD_AUDIO)</h3>
+    <ul>
+      <li><strong>Mục đích sử dụng:</strong> Quyền truy cập Micro chỉ được kích hoạt khi người dùng chủ động nhấn biểu tượng micro để sử dụng tính năng <em>Ghi chú bằng giọng nói (Voice-to-Note)</em> nhằm chuyển đổi lời nói thành văn bản.</li>
+      <li><strong>Cam kết an toàn:</strong> Quá trình nhận diện giọng nói được xử lý trực tiếp thông qua API hệ thống của thiết bị. Ứng dụng <strong>KHÔNG ghi âm ngầm, KHÔNG lưu trữ bất kỳ tệp âm thanh nào</strong> và <strong>KHÔNG truyền dữ liệu giọng nói về bất kỳ máy chủ bên ngoài nào</strong> (Ephemeral / On-device processing).</li>
+    </ul>
+
+    <!-- BỔ SUNG: XÁC THỰC SINH TRẮC HỌC -->
+    <h3>C. Xác Thực Sinh Trắc Học & Vân Tay (Biometrics / USE_BIOMETRIC)</h3>
+    <ul>
+      <li><strong>Mục đích sử dụng:</strong> Được sử dụng để hỗ trợ mở khóa nhanh Két sắt Mật khẩu và bảo vệ các ghi chú riêng tư bằng cảm biến vân tay hoặc nhận diện khuôn mặt thay cho mã PIN.</li>
+      <li><strong>Bảo mật phần cứng:</strong> Quá trình quét và xác thực được quản lý 100% bởi hệ điều hành Android thông qua giao thức tiêu chuẩn <code>BiometricPrompt</code> trong chip bảo mật riêng của thiết bị. Ứng dụng <strong>hoàn toàn KHÔNG thu thập, KHÔNG lưu trữ và KHÔNG có quyền truy cập vào dữ liệu mẫu vân tay hay khuôn mặt</strong> của người dùng.</li>
+    </ul>
+
+    <h3>D. Tương tác với Ứng dụng Khác</h3>
     <ul>
       <li>Ứng dụng chỉ tương tác chuyển hướng (Intent) mở Play Store (để giới thiệu ứng dụng khác) hoặc mở ứng dụng email khi người dùng cần hỗ trợ.</li>
       <li>Chúng tôi <strong>KHÔNG</strong> thu thập danh sách hay theo dõi thông tin về các ứng dụng khác được cài đặt trên thiết bị của bạn.</li>
     </ul>
 
-    <h3>C. Tuyên bố Miễn trừ Trách nhiệm Y tế & Chăm sóc Sức khỏe</h3>
+    <h3>E. Tuyên bố Miễn trừ Trách nhiệm Y tế & Chăm sóc Sức khỏe</h3>
     <p>Đối với các ứng dụng đời sống, chăm sóc sức khỏe gia đình và nuôi dạy con, chúng tôi không thu thập hay xử lý dữ liệu bệnh án lâm sàng, triệu chứng y khoa hoặc thông tin sức khỏe nhạy cảm.</p>
     <div class="health-disclaimer">
       <strong>Tuyên Bố Miễn Trừ Y Tế & Chăm Sóc Sức Khỏe:</strong> Toàn bộ nội dung trong ứng dụng—bao gồm nhưng không giới hạn ở các thông tin tham khảo sức khỏe, gợi ý thực đơn ăn dặm, chế độ dinh dưỡng, mốc phát triển và biểu đồ tăng trưởng tham khảo—chỉ mang tính chất <strong>chia sẻ kiến thức và thông tin tham khảo chung</strong>. Các nội dung này hoàn toàn không cấu thành chỉ định y khoa, phác đồ điều trị, tư vấn dinh dưỡng chuyên môn hay lời khuyên y tế chính thức. Các ứng dụng này <strong>KHÔNG thay thế cho việc chẩn đoán, điều trị hoặc tư vấn từ các bác sĩ chuyên khoa, bác sĩ nhi khoa hoặc chuyên gia y tế có chứng chỉ</strong>. Người dùng được khuyến cáo luôn tham khảo ý kiến chuyên môn y tế trước khi áp dụng bất kỳ chế độ dinh dưỡng hay phương pháp chăm sóc nào. Nhà phát triển không chịu trách nhiệm cho bất kỳ hậu quả nào phát sinh từ việc tham khảo thông tin trong các ứng dụng này.
     </div>
-
     <!-- BÊN THỨ BA -->
     <h2>5. BÊN THỨ BA VÀ DỊCH VỤ PHÂN TÍCH</h2>
     <p>Ứng dụng có thể tích hợp các thư viện bên thứ ba uy tín để xử lý thông tin kỹ thuật không định danh:</p>
