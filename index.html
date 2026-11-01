@@ -249,30 +249,40 @@
       <li><strong>Firebase Analytics:</strong> Collects aggregated, anonymous usage data (feature interactions, device model, session frequency) to help improve functionality. All data is anonymized and cannot identify individuals.</li>
     </ul>
 
-    <h3>Third-Party Advertising Services – Unity Ads</h3>
-    <p>This application integrates <strong>Unity Ads</strong>, an advertising network provided by <strong>Unity Technologies</strong>, to serve advertisements within the app.</p>
-    <p><strong>1. Data Collected:</strong><br />
-    The Unity Ads SDK may automatically collect and process certain information from your device when ads are requested, displayed, or interacted with, including:</p>
+        <!-- 5. THIRD-PARTY ADVERTISING SERVICES -->
+    <h2>5. THIRD-PARTY ADVERTISING SERVICES</h2>
+    <p>To support ongoing maintenance and keep our Apps free, we integrate certified third-party advertising networks to display advertisements. These partners may collect and process certain non-personally identifiable device data in accordance with their respective privacy policies.</p>
+
+    <!-- A. UNITY ADS -->
+    <h3>A. Unity Ads (Unity Technologies)</h3>
+    <p>Our Apps integrate the <strong>Unity Ads</strong> network provided by <strong>Unity Technologies ApS</strong> to display rewarded and interstitial advertisements.</p>
     <ul>
-      <li><strong>Device and Advertising Identifiers:</strong> Google Advertising ID (GAID), IP address, device specifications (hardware model, operating system version, system language, carrier).</li>
-      <li><strong>Approximate Location:</strong> Country or city-level location derived from IP address to deliver geographically relevant advertisements.</li>
-      <li><strong>App Activity and Interactions:</strong> Ad impressions, views, clicks, and engagement metrics within the ad units; application usage data related to the ad experience.</li>
-      <li><strong>Financial / Purchase Information:</strong> In-app purchase event signals (excluding sensitive payment credentials, debit/credit card numbers, or bank accounts) for ad campaign optimization and attribution.</li>
-      <li><strong>Diagnostic and Performance Data:</strong> Technical diagnostic information to ensure reliable ad rendering and SDK functionality.</li>
+      <li><strong>Data Collected:</strong> Google Advertising ID (GAID), IP address, device hardware and OS specifications, in-app ad engagement (impressions, clicks), and anonymized purchase metadata for ad optimization.</li>
+      <li><strong>Purposes:</strong> Ad delivery, frequency capping, campaign performance measurement, fraud prevention, and personalized advertising (where consented).</li>
+      <li><strong>Privacy Policy & Opt-out:</strong> Learn more at <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Unity Privacy Policy</a>.</li>
+    </ul>
+
+    <!-- B. INMOBI ADS -->
+    <h3>B. InMobi Ads (InMobi Pte Ltd)</h3>
+    <p>Our Apps integrate the <strong>InMobi SDK</strong> provided by <strong>InMobi Pte Ltd</strong> to serve native advertisements.</p>
+    <p><strong>1. Data Collected by InMobi:</strong></p>
+    <ul>
+      <li><strong>Device and Advertising Identifiers:</strong> Google Advertising ID (GAID/AAID), IP address, device manufacturer, model, operating system version, mobile carrier, language settings, and User Agent.</li>
+      <li><strong>Approximate Location Data:</strong> Coarse geographic location derived from IP address to deliver location-relevant advertisements compliant with local privacy laws.</li>
+      <li><strong>Ad Interaction & Diagnostic Data:</strong> Ad viewability, impressions, clicks, interaction duration, ad load status, and technical performance metrics to prevent invalid traffic and click fraud.</li>
     </ul>
     <p><strong>2. Purposes of Processing:</strong></p>
     <ul>
-      <li>Serving, personalizing, and optimizing advertisements (subject to applicable consent requirements).</li>
-      <li>Ad frequency capping and campaign performance analytics.</li>
-      <li>Fraud detection, security maintenance, and regulatory compliance.</li>
+      <li>To serve, optimize, and deliver native advertisements matched to your interests (if personalized consent is granted).</li>
+      <li>To implement frequency capping (preventing repetitive ads) and protect advertisers against invalid clicks/fraudulent traffic.</li>
+      <li>To comply with regional privacy regulations (GDPR, CCPA/CPRA, and COPPA).</li>
     </ul>
-    <p><strong>3. User Controls and Data Deletion:</strong></p>
+    <p><strong>3. User Rights, Opt-Out & Data Deletion:</strong></p>
     <ul>
-      <li>All data collected by the SDK is encrypted in transit.</li>
-      <li>Users can manage, opt out of personalized advertising, or reset their Advertising ID at any time via Android settings: <strong>Settings &gt; Google &gt; Ads</strong>.</li>
-      <li>For more details on Unity’s data practices and instructions on how to request the deletion of your data, please review the <a href="https://unity.com/legal/privacy-policy" target="_blank">Unity Privacy Policy</a>.</li>
+      <li>All data transmissions between your device and InMobi servers are encrypted in transit (HTTPS/TLS).</li>
+      <li>You can opt out of personalized ads at any time via in-app <strong>Privacy Settings</strong> or through your device settings: <strong>Settings &gt; Google &gt; Ads &gt; Delete/Reset Advertising ID</strong>.</li>
+      <li>For full details on InMobi's data practices or to exercise your GDPR/CCPA data deletion rights, please visit the <a href="https://www.inmobi.com/privacy-policy" target="_blank" rel="noopener">InMobi Privacy Policy</a> or contact InMobi's Data Protection Officer at <a href="mailto:privacy@inmobi.com">privacy@inmobi.com</a>.</li>
     </ul>
-    <p>You can manage or reset your Advertising ID and opt out of personalized ads at any time via your device's <strong>Settings &gt; Google &gt; Ads</strong>.</p>
 
     <!-- USER-GENERATED CONTENT -->
     <h2>6. USER-GENERATED CONTENT & ACTIVE SHARING</h2>
@@ -427,30 +437,40 @@
       <li><strong>Firebase Analytics:</strong> Thu thập dữ liệu sử dụng ẩn danh (tần suất tính năng, thiết bị, lỗi crash) nhằm cải thiện hiệu năng. Tất cả dữ liệu đều được ẩn danh hoàn toàn.</li>
     </ul>
 
-    <h3>Dịch vụ Quảng cáo của Bên thứ ba – Unity Ads</h3>
-    <p>Ứng dụng này tích hợp mạng lưới quảng cáo <strong>Unity Ads</strong> do <strong>Unity Technologies</strong> cung cấp để hiển thị quảng cáo cho người dùng.</p>
-    <p><strong>1. Dữ liệu được thu thập:</strong><br />
-    Unity Ads SDK có thể tự động thu thập và xử lý một số thông tin nhất định từ thiết bị của bạn khi hiển thị hoặc tương tác với quảng cáo, bao gồm:</p>
+        <!-- 5. DỊCH VỤ QUẢNG CÁO CỦA BÊN THỨ BA -->
+    <h2>5. DỊCH VỤ QUẢNG CÁO CỦA BÊN THỨ BA</h2>
+    <p>Để duy trì ứng dụng hoàn toàn miễn phí và liên tục cập nhật, chúng tôi hợp tác với các mạng lưới quảng cáo đối tác được chứng nhận. Các đối tác này có thể tự động thu thập và xử lý một số thông tin thiết bị không mang tính định danh cá nhân theo chính sách bảo mật riêng của họ.</p>
+
+    <!-- A. UNITY ADS -->
+    <h3>A. Mạng quảng cáo Unity Ads (Unity Technologies)</h3>
+    <p>Ứng dụng tích hợp mạng quảng cáo <strong>Unity Ads</strong> do <strong>Unity Technologies ApS</strong> cung cấp để hiển thị quảng cáo video và tương tác.</p>
     <ul>
-      <li><strong>Mã nhận dạng thiết bị và quảng cáo:</strong> Mã nhận dạng quảng cáo của Google (Google Advertising ID - GAID), địa chỉ IP, thông tin thiết bị (kiểu máy, hệ điều hành, ngôn ngữ, nhà mạng).</li>
-      <li><strong>Vị trí gần đúng:</strong> Vị trí ở cấp quốc gia hoặc thành phố dựa trên địa chỉ IP nhằm phân phối quảng cáo phù hợp với khu vực địa lý.</li>
-      <li><strong>Hoạt động trong ứng dụng và tương tác:</strong> Lượt xem, số lần nhấp và các lượt tương tác với quảng cáo trong ứng dụng; thời gian sử dụng ứng dụng liên quan đến trải nghiệm quảng cáo.</li>
-      <li><strong>Thông tin tài chính/Giao dịch:</strong> Tín hiệu lịch sử giao dịch mua hàng trong ứng dụng (không bao gồm thông tin thẻ hay tài khoản ngân hàng) để tối ưu hóa quảng cáo.</li>
-      <li><strong>Dữ liệu chẩn đoán và hiệu suất:</strong> Dữ liệu kỹ thuật phục vụ việc tải và hiển thị quảng cáo ổn định.</li>
+      <li><strong>Dữ liệu thu thập:</strong> Mã nhận dạng quảng cáo Google (GAID), địa chỉ IP, thông tin cấu hình thiết bị, lượt tương tác xem/nhấp quảng cáo và tín hiệu giao dịch ẩn danh.</li>
+      <li><strong>Mục đích:</strong> Phân phối quảng cáo, giới hạn tần suất hiển thị (frequency capping), chống gian lận và hiển thị quảng cáo cá nhân hóa (nếu được đồng ý).</li>
+      <li><strong>Chính sách &amp; Quyền riêng tư:</strong> Xem chi tiết tại <a href="https://unity.com/legal/privacy-policy" target="_blank" rel="noopener">Chính sách quyền riêng tư của Unity</a>.</li>
+    </ul>
+
+    <!-- B. INMOBI ADS -->
+    <h3>B. Mạng quảng cáo InMobi (InMobi Pte Ltd)</h3>
+    <p>Ứng dụng tích hợp <strong>InMobi SDK</strong> do <strong>InMobi Pte Ltd</strong> cung cấp để hiển thị quảng cáo dạng Native (quảng cáo tự nhiên hòa hợp với giao diện).</p>
+    <p><strong>1. Dữ liệu InMobi có thể thu thập:</strong></p>
+    <ul>
+      <li><strong>Mã nhận dạng thiết bị và quảng cáo:</strong> Mã nhận dạng quảng cáo Google (Google Advertising ID - GAID), địa chỉ IP, nhà sản xuất thiết bị, kiểu máy, phiên bản hệ điều hành, nhà mạng, cài đặt ngôn ngữ và chuỗi User Agent.</li>
+      <li><strong>Vị trí gần đúng:</strong> Vị trí địa lý cấp thành phố hoặc quốc gia suy ra từ địa chỉ IP để phân phối quảng cáo phù hợp với khu vực địa lý của bạn.</li>
+      <li><strong>Dữ liệu tương tác và hiệu năng:</strong> Lượt xem hiển thị (Impression), lượt nhấp (Click), thời gian tương tác với quảng cáo, chẩn đoán lỗi tải nhằm phục vụ cơ chế đo lường và phòng chống gian lận click tặc (Invalid Traffic).</li>
     </ul>
     <p><strong>2. Mục đích xử lý dữ liệu:</strong></p>
     <ul>
-      <li>Phân phối, tối ưu hóa và cá nhân hóa quảng cáo (nếu được người dùng đồng ý).</li>
-      <li>Giới hạn tần suất hiển thị (frequency capping) và đo lường hiệu quả chiến dịch.</li>
-      <li>Ngăn chặn gian lận nhấp chuột, bảo vệ an toàn và tuân thủ các quy định pháp luật.</li>
+      <li>Phân phối, tối ưu hóa và cá nhân hóa nội dung quảng cáo dựa trên sở thích (nếu người dùng cấp quyền đồng thuận theo GDPR).</li>
+      <li>Giới hạn tần suất hiển thị quảng cáo lặp lại và bảo vệ nhà phát triển trước các luồng nhấp chuột giả mạo.</li>
+      <li>Đảm bảo tuân thủ các quy định bảo vệ dữ liệu toàn cầu (GDPR châu Âu, CCPA Hoa Kỳ và chính sách gia đình Google Play).</li>
     </ul>
     <p><strong>3. Quyền của người dùng và Xóa dữ liệu:</strong></p>
     <ul>
-      <li>Dữ liệu truyền tải giữa thiết bị và máy chủ Unity luôn được mã hóa trong quá trình truyền (in-transit).</li>
-      <li>Bạn có thể đặt lại hoặc tắt tính năng cá nhân hóa quảng cáo bất cứ lúc nào trong cài đặt của thiết bị: <strong>Cài đặt Android &gt; Google &gt; Quảng cáo (Ads)</strong>.</li>
-      <li>Bạn có thể xem chi tiết cách Unity Technologies xử lý dữ liệu và yêu cầu xóa dữ liệu của mình tại: <a href="https://unity.com/legal/privacy-policy" target="_blank">Chính sách quyền riêng tư của Unity</a>.</li>
+      <li>Toàn bộ dữ liệu trao đổi giữa thiết bị của bạn và máy chủ InMobi đều được mã hóa an toàn trong quá trình truyền tải (HTTPS/TLS).</li>
+      <li>Bạn có toàn quyền tắt quảng cáo cá nhân hóa bất kỳ lúc nào trong mục <strong>Cài đặt quyền riêng tư &amp; Quảng cáo</strong> của ứng dụng hoặc trong <strong>Cài đặt thiết bị &gt; Google &gt; Quảng cáo &gt; Đặt lại / Xóa Mã nhận dạng quảng cáo</strong>.</li>
+      <li>Xem chi tiết về cách InMobi bảo vệ dữ liệu và các kênh yêu cầu xóa dữ liệu tại: <a href="https://www.inmobi.com/privacy-policy" target="_blank" rel="noopener">Chính sách quyền riêng tư của InMobi</a> hoặc liên hệ qua email bảo mật của InMobi: <a href="mailto:privacy@inmobi.com">privacy@inmobi.com</a>.</li>
     </ul>
-    <p>Bạn có thể quản lý, đặt lại Mã Quảng cáo hoặc từ chối quảng cáo cá nhân hóa trong mục <strong>Cài đặt thiết bị &gt; Google &gt; Quảng cáo</strong>.</p>
 
     <!-- NỘI DUNG NGƯỜI DÙNG TẠO -->
     <h2>6. NỘI DUNG DO NGƯỜI DÙNG TẠO & CHIA SẺ DỮ LIỆU CHỦ ĐỘNG</h2>
